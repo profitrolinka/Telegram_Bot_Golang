@@ -1,3 +1,3 @@
-**Telegram Bot Golang**
+# Telegram Reminder Bot
 
-Simple telegram reminder bot
+This is a Telegram Reminder Bot written in Go (Golang). The bot allows users to save URL links for later .
