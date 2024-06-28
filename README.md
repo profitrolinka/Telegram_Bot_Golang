@@ -1,3 +1,3 @@
-*Telegram Bot Golang*
+**Telegram Bot Golang**
 
 Simple telegram reminder bot
