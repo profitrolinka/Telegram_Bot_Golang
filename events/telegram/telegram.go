@@ -4,14 +4,14 @@ import (
 	"errors"
 	"tgbot2/clients/telegram"
 	"tgbot2/events"
+	"tgbot2/files_storage"
 	"tgbot2/lib/e"
-	"tgbot2/storage"
 )
 
 type Processor struct {
 	tg      *telegram.Client
 	offset  int
-	storage storage.Storage
+	storage files_storage.Storage
 }
 
 type Meta struct {
@@ -24,7 +24,7 @@ var (
 	ErrUnknownMetaType  = errors.New("unknown meta type")
 )
 
-func New(client *telegram.Client, storage storage.Storage) *Processor {
+func New(client *telegram.Client, storage files_storage.Storage) *Processor {
 	return &Processor{
 		tg:      client,
 		storage: storage,
